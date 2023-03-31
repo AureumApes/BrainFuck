@@ -13,7 +13,9 @@ This will set cell\[1] to 50
 ```brainfuck
 ++++++++[>++++<-]
 ```
-Memory<br>
+Memory Before<br>
+\[10] \[0]<br>
+Memory After<br>
 \[0] \[50]
 
 Copy
@@ -24,7 +26,7 @@ This will move the value from cell\[0] too cell\[1]
 +++++++[>+<-]
 ```
 Memory Before<br>
-\[7] \[0
+\[7] \[0]<br>
 Memory After<br>
 \[0] \[7]
 
@@ -34,6 +36,6 @@ Memory After<br>
 >>[<<+>>-]<< Move cell2 to to cell0
 ```
 Memory Before<br>
-\[7] \[0]
+\[7] \[0]<br>
 Memory<br>
 \[7] \[7]
