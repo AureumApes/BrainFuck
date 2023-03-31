@@ -18,18 +18,22 @@ Memory<br>
 
 Copy
 -
-### Copy with loss
-This will copy the byte freom cell\[0] too cell\[1]
+### Move a Value
+This will move the value from cell\[0] too cell\[1]
 ```brainfuck
 +++++++[>+<-]
 ```
-Memory<br>
+Memory Before<br>
+\[7] \[0
+Memory After<br>
 \[0] \[7]
 
-### Copy withot loss
+### Copy a value
 ```brainfuck
-+++++++[>+<>>+<<-] Copy cell0 to cell1 and cell2
->>[<<+>>-]<< Copy cell2 to to cell0 with loss
++++++++[>+<>>+<<-] Move cell0 to cell1 and cell2
+>>[<<+>>-]<< Move cell2 to to cell0
 ```
+Memory Before<br>
+\[7] \[0]
 Memory<br>
 \[7] \[7]
